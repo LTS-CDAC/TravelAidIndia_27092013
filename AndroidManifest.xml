@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cdac.lts.travelaid"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:debuggable="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".TravelAidMainActivity"
+            android:label="@string/title_activity_travel_aid_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HotelDatabaseMainActivity"
+            android:label="@string/title_activity_hotel_database_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cdac.lts.travelaid.HotelDatabaseMainActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TourAgencyMainActivity"
+            android:label="@string/title_activity_tour_agency_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cdac.lts.travelaid.TourAgencyMainActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PreferenceActivity"
+            android:label="@string/title_activity_preference"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SynchronizeHotelDbActivity"
+            android:label="@string/title_activity_synchronize_hotel_db"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cdac.lts.travelaid.SynchronizeHotelDbActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SynchronizeTravelAgencyDbActivity"
+            android:label="@string/title_activity_synchronize_travel_agency_db"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="cdac.lts.travelaid.SynchronizeTravelAgencyDbActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TravelPreferenceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutDialog"
+            android:label="@string/title_activity_about_dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                 />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

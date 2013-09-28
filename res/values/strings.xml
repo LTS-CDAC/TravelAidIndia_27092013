@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Travel Aid India</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_travel_aid_main">Travel Aid India</string>
+    <string name="title_activity_hotel_database_main">Travel Aid India</string>
+    <string name="title_activity_tour_agency_main">Travel Aid India</string>
+    <string name="preference">Preference</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_preference">Preference</string>
+    <string name="title_activity_synchronize_hotel_db">Synchronize Database</string>
+    <string name="title_activity_synchronize_travel_agency_db">Synchronize Database</string>
+    <string name="title_activity_about_dialog">About</string>
+    <string name="about">About</string>
+
+</resources>

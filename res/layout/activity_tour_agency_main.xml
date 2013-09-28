@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompletetextview_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/autocompletetextview_city"
+        android:hint="Populate by States"
+        android:minHeight="48dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autocompletetextview_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_speak_city"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/autocompletetextview_state"
+        android:layout_toLeftOf="@+id/button_speak_city"
+        android:hint="Populate by City" />
+
+    <ImageButton
+        android:id="@+id/button_speak_state"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/autocompletetextview_city"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <ImageButton
+        android:id="@+id/button_speak_city"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/autocompletetextview_state"
+        android:src="@android:drawable/ic_btn_speak_now" />
+
+    <!--
+    <AutoCompleteTextView
+        android:id="@+id/autocompletetextview_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_speak_region"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/autocompletetextview_city"
+        android:layout_alignTop="@+id/button_speak_region"
+        android:hint="Populate by Region"
+        />
+
+    <ImageButton
+        android:id="@+id/button_speak_region"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_speak_city"
+        android:src="@android:drawable/ic_btn_speak_now" 
+       /> 
+    -->
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/autocompletetextview_city" />
+
+</RelativeLayout>

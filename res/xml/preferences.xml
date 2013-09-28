@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Synchronize" >
+        <PreferenceScreen
+            android:key="key_update_travel_agent_database"
+            android:title="Update travel agent database" android:enabled="true">
+            <intent android:action="cdac.lts.travelaid.SynchronizeTravelAgencyDbActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="key_update_hotel_database"
+            android:title="Update hotel database" android:enabled="true">
+            <intent android:action="cdac.lts.travelaid.SynchronizeHotelDbActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TTS Settings" >
+        <CheckBoxPreference
+            android:key="key_preference_read_search_results"
+            android:title="Read query results" />
+        <CheckBoxPreference
+            android:key="Key_preference_stop_tts_on_shake"
+            android:title="Stop TTS on shake" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

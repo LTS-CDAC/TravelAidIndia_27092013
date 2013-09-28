@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android1:id="@+id/imageView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:scaleType="fitXY"
+        android1:src="@drawable/back" />
+
+    <RelativeLayout
+        android1:id="@+id/relativeLayout1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_centerHorizontal="true"
+        android1:layout_centerVertical="true" >
+
+        <Button
+            android1:id="@+id/button_approved_service_provider"
+            style="@style/button_style"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentTop="true"
+            android1:layout_centerHorizontal="true"
+            android1:contentDescription="Service Providers"
+            android1:minHeight="80dip"
+            android1:minWidth="100dip"
+            android1:text="Service Providers"
+            android1:textColor="#000"
+            android1:textStyle="normal|bold" />
+
+        <Button
+            android1:id="@+id/button_approved_hotels"
+            style="@style/button_style"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_alignParentLeft="true"
+            android1:layout_alignRight="@+id/button_approved_service_provider"
+            android1:layout_below="@+id/button_approved_service_provider"
+            android1:contentDescription="Hotels"
+            android1:minHeight="80dip"
+            android1:minWidth="100dip"
+            android1:text="Hotels"
+            android1:textColor="#000"
+            android1:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
